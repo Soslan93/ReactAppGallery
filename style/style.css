@@ -1,0 +1,47 @@
+body{
+    background: linear-gradient(45deg, #EECFBA, #C5DDE8);
+}
+.media-object{
+    width: 64px;
+    height: 64px;
+    cursor: pointer;
+    
+}
+.form-group{
+    margin: 20px;
+}
+.form-group input{
+    width: 35%;
+    margin-bottom: 10px
+}
+.form-group textarea{
+    width: 35%;
+}
+textarea.form-control::placeholder {
+    font-weight: 300;
+}
+textarea.form-control {
+    padding-left: 0.8rem;
+}
+span.delete-note{
+    margin-left: 100%;
+    width: 8px;
+    cursor: pointer;
+}
+.gallery{
+    width: 100%;
+   
+}
+.container{
+    width: 100%;
+    
+}
+ul.list-group {
+   width: 100%;
+}
+li.list-group-item{
+    margin-bottom: 2px;
+}
+.btn{
+    background: linear-gradient(45deg, #e65c00, #f9d423);
+}
