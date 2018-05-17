@@ -11,21 +11,21 @@ class App extends Component{
         this.state ={ images: [{ id: 0, src: "http://www.radionetplus.ru/uploads/posts/2013-05/1369460621_panda-26.jpg", desc: 'панда' }, { id: 1, src: "http://www.radionetplus.ru/uploads/posts/2013-05/1369460621_panda-26.jpg", desc: 'панда' }] };
         
     }
-    //сохраняем наш массив объектов +
+    
     _updateLocalStorage() {
         const images = JSON.stringify(this.state.images);
         localStorage.setItem('images', images);
     }
     componentDidMount() {
-    var localImages = JSON.parse(localStorage.getItem('images'));
-    if (localImages) {
-        this.setState({ images: localImages });
-        }
+        const localImages = JSON.parse(localStorage.getItem('images'));
+        if (localImages) {
+            this.setState({ images: localImages });
+            }
     }
     componentDidUpdate() {
         this._updateLocalStorage();
     }
-    //-
+    
     addImage(img){
         
         const newImages = this.state.images.slice();
@@ -39,6 +39,10 @@ class App extends Component{
         const imageId = img.id;
         const newImages = this.state.images.filter(img=>img.id!==imageId);
         this.setState({images: newImages});
+    }
+    editDesc(img){
+        console.log(img);
+        
     }
    
     render(){

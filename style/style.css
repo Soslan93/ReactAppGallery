@@ -41,6 +41,8 @@ ul.list-group {
 }
 li.list-group-item{
     margin-bottom: 2px;
+    background-color: inherit;
+    
 }
 .btn{
     background: linear-gradient(45deg, #e65c00, #f9d423);
