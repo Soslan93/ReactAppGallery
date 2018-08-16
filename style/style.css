@@ -23,14 +23,12 @@ textarea.form-control::placeholder {
 textarea.form-control {
     padding-left: 0.8rem;
 }
-span.delete-note{
-    margin-left: 100%;
-    width: 8px;
-    cursor: pointer;
-}
 .gallery{
     width: 100%;
    
+}
+.note {
+    cursor: pointer;
 }
 .container{
     width: 100%;
@@ -46,4 +44,9 @@ li.list-group-item{
 }
 .btn{
     background: linear-gradient(45deg, #e65c00, #f9d423);
+}
+.form-picture {
+    display: none;
+    background-color: #C5DDE8;
+    opacity: 0.7; 
 }
